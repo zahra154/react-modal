@@ -1,7 +1,7 @@
 import './todo.scss'
 import {useState} from "react";
 import Modal from "../modal/modal";
-import Backdrop from "../backdrop/backdrop";
+
 
 function Todo(props) {
     const [isModalFlag , setModalFlag] = useState(false)
@@ -22,8 +22,7 @@ function Todo(props) {
                     <button className='btn btn-danger' onClick={deleteHandler}> حذف</button>
                 </div>
             </div>
-            {isModalFlag && <Modal onConfirm={closeModalHandler} onCancel={closeModalHandler}/>}
-            {isModalFlag && <Backdrop onClick={closeModalHandler}/>}
+            {isModalFlag && <Modal  onClick={closeModalHandler} onConfirm={closeModalHandler} onCancel={closeModalHandler}/>}
         </div>
 
 
