@@ -1,0 +1,15 @@
+
+@import "src/scss/vazir-font.scss";
+
+
+body {
+    box-sizing: border-box !important;
+    direction: rtl;
+    text-align: center;
+    height: 100vh;
+    font-size: 0.85rem !important;
+    font-family: Vazir FD !important;
+}
+* {
+    scroll-behavior: smooth;
+}
